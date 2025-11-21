@@ -1,0 +1,14 @@
+cd welcome-to-docker
+docker build -t welcome-to-docker .
+git clone https://github.com/docker/multi-container-app
+docker compose up -d
+docker compose watch
+git clone https://github.com/docker/multi-container-app
+git clone https://github.com/docker/bindmount-apps
+docker compose up -d
+docker init
+docker tag docker/welcome-to-docker YOUR-USERNAME/welcome-to-docker
+Run the following command to uninstall all conflicting packages: 
+sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-doc podman-docker containerd runc | cut -f1)
+
+
